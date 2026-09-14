@@ -11,7 +11,7 @@ Identify somatic structural variants (SVs), copy number alterations (CNVs), and 
 
 ## Key Findings
 - Delly detected multiple deletions, duplications, and inversions.
-- Somatic filtering retained 10 high-confidence tumor-specific SVs.
+- 10 somatic SVs retained by the Delly filtering criteria
 - CNV analysis revealed regions of copy number gain and loss.
 - BAF analysis identified allelic imbalance across several chromosomal segments.
 
