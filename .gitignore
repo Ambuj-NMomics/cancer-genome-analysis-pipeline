@@ -1,0 +1,12 @@
+*.bam
+*.bai
+*.bcf
+*.csi
+*.vcf
+*.vcf.gz
+*.gz
+
+.Rhistory
+.RData
+
+.DS_Store

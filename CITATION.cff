@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+
+title: Integrative Cancer Genome Analysis
+
+authors:
+  - family-names: Maurya
+    given-names: Ambuj Narayan
+
+date-released: 2026
+
+abstract: >
+  End-to-end analysis of structural variants,
+  copy-number alterations and allelic imbalance
+  from short-read tumor-normal sequencing data.
