@@ -23,7 +23,6 @@ The workflow integrates:
 
 The goal is to identify genomic alterations associated with cancer development and progression by combining multiple orthogonal genomic signals.
 
----
 
 # Biological Background
 
@@ -44,7 +43,6 @@ These events can:
 - Amplify oncogenes
 - Generate fusion genes
 
----
 
 ### Copy Number Variants (CNVs)
 
@@ -57,7 +55,7 @@ Changes in DNA dosage:
 
 CNVs frequently drive tumor evolution by altering gene expression.
 
----
+
 
 ### B-Allele Frequency (BAF)
 
@@ -70,7 +68,7 @@ BAF helps detect:
 - Copy-neutral LOH
 - Tumor purity effects
 
----
+
 
 # Objectives
 
@@ -85,7 +83,7 @@ The objectives of this project were:
 7. Integrate SV, CNV, and BAF evidence.
 8. Characterize genomic instability in the tumor genome.
 
----
+
 
 # Dataset
 
@@ -96,7 +94,7 @@ The objectives of this project were:
 | tumor | Melanoma Tumor |
 | control | Matched Normal |
 
----
+
 
 ## Reference
 
@@ -106,7 +104,7 @@ The objectives of this project were:
 | chr2.map.fa | Mappability reference |
 | hg19.ex | Exclusion regions |
 
----
+
 
 # Workflow Overview
 
@@ -138,7 +136,6 @@ Tumor BAM + Normal BAM
  Integrated Interpretation
 ```
 
----
 
 # Software and Dependencies
 
@@ -152,7 +149,7 @@ Tumor BAM + Normal BAM
 | Wally | Breakpoint visualization |
 | Bedtools | Genomic interval operations |
 
----
+
 
 ## R Packages
 
@@ -176,7 +173,7 @@ if (!requireNamespace("BiocManager"))
 BiocManager::install("DNAcopy")
 ```
 
----
+
 
 # Project Structure
 
@@ -209,7 +206,7 @@ integrative-cancer-genome-analysis
 └── environment.yml
 ```
 
----
+
 
 # Analysis Workflow
 
@@ -256,7 +253,7 @@ Checks:
 - Duplicate reads
 - Alignment quality
 
----
+
 
 ## Step 2: Structural Variant Calling
 
@@ -297,7 +294,7 @@ Candidate structural variants supported by:
 - Discordant read pairs
 - Split reads
 
----
+
 
 ## Step 3: Somatic SV Filtering
 
@@ -325,7 +322,7 @@ somatic.bcf
 
 10 somatic structural variants identified.
 
----
+
 
 ## Step 4: Breakpoint Visualization
 
@@ -368,7 +365,7 @@ Confirms:
 - Read pair orientation
 - Breakpoint support
 
----
+
 
 ## Step 5: Copy Number Analysis
 
@@ -398,7 +395,7 @@ cnv.bcf
 cnv.cov.gz
 ```
 
----
+
 
 ## Step 6: Copy Number Visualization
 
@@ -424,7 +421,7 @@ copy_number_profile.png
 - CN > 2 → Gain
 - CN < 2 → Loss
 
----
+
 
 ## Step 7: SV + CNV Integration
 
@@ -472,7 +469,7 @@ bash src/bash/calculate_baf.sh
 baf.tsv
 ```
 
----
+
 
 ## Step 9: BAF Visualization
 
@@ -496,7 +493,7 @@ Deviation suggests:
 - Copy-neutral LOH
 - Allelic imbalance
 
----
+
 
 ## Step 10: CNV Segmentation
 
@@ -519,7 +516,7 @@ cnv_segmented_profile.png
 
 Segments represent inferred chromosomal gains and losses.
 
----
+
 
 # Major Findings
 
@@ -539,7 +536,6 @@ Examples:
 | DUP00001492 | Duplication |
 | INV00000364 | Inversion |
 
----
 
 ## Copy Number Alterations
 
@@ -549,7 +545,7 @@ Observed:
 - Copy number losses
 - Segmented CNV regions
 
----
+
 
 ## Allelic Imbalance
 
@@ -559,7 +555,7 @@ BAF deviations suggest:
 - Chromosomal imbalance
 - Potential tumor evolution events
 
----
+
 
 # Results
 
@@ -595,7 +591,7 @@ results/figures/sv_cnv_overlay.png
 results/figures/breakpoints/
 ```
 
----
+
 
 # Reproducibility
 
@@ -640,7 +636,7 @@ Rscript src/r/step14_CNV_segmentation.R
 - Multi-sample comparison
 - Automated Nextflow workflow
 
----
+
 
 # Citation
 
@@ -654,7 +650,6 @@ Integrative Cancer Genome Analysis Using Short-Read Sequencing.
 GitHub Repository.
 ```
 
----
 
 # Author
 
@@ -662,4 +657,4 @@ GitHub Repository.
 
 Bioinformatics | Cancer Genomics | NGS Analysis
 
-GitHub: https://github.com/<your_username>
+GitHub: https://github.com/<Ambuj-NMomics>
