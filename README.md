@@ -9,7 +9,7 @@
 
 This project demonstrates an end-to-end analysis of somatic structural variants (SVs), copy number variants (CNVs), and allelic imbalance from paired tumor-normal whole-genome sequencing data.
 
-The analysis was performed using short-read sequencing data and focuses on chromosome 2 of a melanoma tumor-normal pair.
+The analysis was performed using short-read sequencing data.The analysis focuses on chromosome 2 of a paired tumor-normal sequencing dataset.
 
 The workflow integrates:
 
@@ -657,4 +657,4 @@ GitHub Repository.
 
 Bioinformatics | Cancer Genomics | NGS Analysis
 
-GitHub: https://github.com/<Ambuj-NMomics>
+GitHub: https://github.com/Ambuj-NMomics
