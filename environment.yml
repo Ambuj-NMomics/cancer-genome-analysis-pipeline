@@ -1,0 +1,16 @@
+name: cancer_sv_analysis
+
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  - delly
+  - samtools
+  - bcftools
+  - htslib
+  - r-base
+  - r-data.table
+  - r-ggplot2
+  - bioconductor-dnacopy
